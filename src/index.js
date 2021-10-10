@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  <h1>Welcome to React!!</h1>,
   <img src="worker.jpg" alt="W3Schools.com"></img>,
   document.getElementById('root')
 );
@@ -13,3 +14,12 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+// common Branch -- developes pull rquest --> merge
+// sidd branch
+// mitra branch
+// Branch Created from common branch
+// sidd --> selft branhc --> sidd --> pull reuqest --> merge --> common branhc
+// mitraa- git pull origin common brqnch-> self -> selftcchanges  -->mitraa push -> pull reuqets--> mege --> common

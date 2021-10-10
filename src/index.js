@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  <h1>Welcome to React!!</h1>,
   <img src="worker.jpg" alt="W3Schools.com"></img>,
   document.getElementById('root')
 );

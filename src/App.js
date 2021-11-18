@@ -1,14 +1,57 @@
-
+import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home'
+import Bikes from './components/Inspection/Bikes'
+import SideMenu from './components/Inspection/Others/SideMenu'
+import { makeStyles, CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
+import Page from './components/Issues/Page'
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#333996",
+      light: '#3c44b126'
+    },
+    secondary: {
+      main: "#f83245",
+      light: '#f8324526'
+    },
+    background: {
+      default: "#f4f5fd"
+    },
+  },
+  overrides:{
+    MuiAppBar:{
+      root:{
+        transform:'translateZ(0)'
+      }
+    }
+  },
+  props:{
+    MuiIconButton:{
+      disableRipple:true
+    }
+  }
+})
+
+const useStyles = makeStyles({
+  appMain: {
+    paddingLeft: '320px',
+    width: '100%'
+  }
+})
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <SideMenu />
+      <div className={classes.appMain}>  
+
+        <Bikes/>
+      </div>
+      <CssBaseline />
+    </ThemeProvider>
   );
 }
 
